@@ -10,15 +10,15 @@ pub struct CourseColor {
 #[derive(Deserialize, Serialize)]
 pub struct Schedule {
     pub _id: ScheduleID,
-    pub cached_at: String,
-    pub base_url: String,
-    pub starts_at: String,
+    pub cachedAt: String,
+    pub baseUrl: String,
+    pub startsAt: String,
     pub schedule: Bson,
     pub generated_uuids: Vec<String>,
 }
 
 #[derive(Deserialize, Serialize)]
 pub struct ScheduleID {
-    pub schedule_id: String,
-    pub starts_at: String,
+    pub scheduleId: String,
+    pub startsAt: String,
 }

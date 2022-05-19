@@ -1,3 +1,4 @@
+#[allow(non_snake_case)]
 mod models;
 mod routes;
 mod services;
@@ -8,6 +9,7 @@ extern crate rocket;
 extern crate chrono;
 extern crate dotenv;
 extern crate serde;
+extern crate serde_json;
 
 use dotenv::dotenv;
 use rocket::{Catcher, Route};
